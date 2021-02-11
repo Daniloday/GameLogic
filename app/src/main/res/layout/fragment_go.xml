@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.go.GoFragment"
+    android:background="@drawable/back">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="219dp"
+        android:layout_height="418dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="144dp"
+            android:backgroundTint="@color/white2"
+            android:text="@string/btn_go"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="39dp"
+            android:backgroundTint="@color/white2"
+            android:text="@string/btn_exit"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/btn_go"
+            app:layout_constraintTop_toBottomOf="@+id/btn_go" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="235dp"
+            android:layout_height="135dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/sss"
+            app:layout_constraintBottom_toTopOf="@+id/btn_go"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-8dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:src="@drawable/back3" />
+
+</FrameLayout>

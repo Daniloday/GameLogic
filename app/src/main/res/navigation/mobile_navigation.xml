@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_go">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.missclick.gamelogic.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_go"
+        android:name="com.missclick.gamelogic.ui.go.GoFragment"
+        android:label="@string/menu_go"
+        tools:layout="@layout/fragment_go" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.missclick.gamelogic.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_one"
+        android:name="com.missclick.gamelogic.ui.engine.one.OneFragment"
+        android:label="@string/menu_one"
+        tools:layout="@layout/fragment_one" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.missclick.gamelogic.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_final"
+        android:name="com.missclick.gamelogic.ui.finall.FinalFragment"
+        android:label="@string/menu_final"
+        tools:layout="@layout/fragment_final" />
+
+    <fragment
+        android:id="@+id/nav_two"
+        android:name="com.missclick.gamelogic.ui.engine.two.TwoFragment"
+        android:label="@string/menu_final"
+        tools:layout="@layout/two_fragment" />
+
+    <fragment
+        android:id="@+id/nav_three"
+        android:name="com.missclick.gamelogic.ui.engine.three.ThreeFragment"
+        android:label="@string/menu_final"
+        tools:layout="@layout/three_fragment" />
+
 </navigation>
